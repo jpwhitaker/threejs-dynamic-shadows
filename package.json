@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run bundle && npm-run-all --parallel watch serve",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider npm run bundle && npm-run-all --parallel watch serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "webpack",
-    "watch": "webpack --watch",
+    "watch": "NODE_OPTIONS=--openssl-legacy-provider webpack --watch",
     "serve": "cd dist && live-server"
   },
   "keywords": [],
@@ -22,7 +22,7 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "@types/three": "^0.127.0",
-    "three": "^0.127.0"
+    "@types/three": "^0.149.0",
+    "three": "^0.149.0"
   }
 }
