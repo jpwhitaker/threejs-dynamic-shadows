@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@types/three": "^0.149.0",
+    "lil-gui": "^0.18.0",
     "three": "^0.149.0"
   }
 }
